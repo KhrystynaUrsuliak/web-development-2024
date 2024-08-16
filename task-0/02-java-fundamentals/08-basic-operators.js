@@ -23,3 +23,8 @@ true + false; // 1
 null + 1; // 1
 undefined + 1; // NaN
 ' \t \n' - 2; // -2
+
+a = prompt('First number?', 1);
+b = prompt('Second number?', 2);
+
+alert(Number(a) + Number(b));
