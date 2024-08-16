@@ -1,6 +1,6 @@
 let admin;
-let name = "John";
+let userName = "John";
 
-admin = name;
+admin = userName;
 
 alert(admin);
