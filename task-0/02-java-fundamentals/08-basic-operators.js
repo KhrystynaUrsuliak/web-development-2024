@@ -28,3 +28,5 @@ a = prompt('First number?', 1);
 b = prompt('Second number?', 2);
 
 alert(Number(a) + Number(b));
+
+// alert(+a + +b);
