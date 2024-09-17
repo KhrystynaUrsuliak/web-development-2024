@@ -6,24 +6,41 @@
   <title>Bookstore</title>
 </head>
 <body>
-  <h1>Librarium Aurum Bookstore</h1>
+  <nav id="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <h3>Welcome to the Librarium Aurum Bookstore - a treasure trove of books and knowledge!</h3>
+  <h1 id="mainTitle">Librarium Aurum Bookstore</h1>
+
+  <h3 id="welcomeMessage">Welcome to the Librarium Aurum Bookstore - a treasure trove of books and knowledge!</h3>
 
   <p>Discover new books, browse genres and more!</p>
 
   <button id="todaysBook">Book Of The Day</button>
   <p id="bookOfTheDay"></p>
 
-  <div class="text-entry">
+  <div class="textEntry">
     Enter your favourite genre:
     <input type="text" id="genre" autocomplete="off">
   </div>
 
-  <button class="btn" id="submitGenre">Submit Genre</button>
+  <button id="submitGenre">Submit Genre</button>
   <p id="recommendation"></p>
 
-  <button class="btn" id="dangerBtn">Don`t click</button>
+  <button class="btn">Don't click</button>
+
+  <footer>
+    <p>&copy; 2024 Librarium Aurum. Follow us on:</p>
+    <ul id="socialLinks">
+      <li><a href="#" class="socialLink">Twitter</a></li>
+      <li><a href="#" class="socialLink">Facebook</a></li>
+      <li><a href="#" class="socialLink">Instagram</a></li>
+    </ul>
+  </footer>
 
   <script src="script.js"></script>
 </body>

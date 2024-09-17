@@ -34,8 +34,46 @@ function showBookOfTheDay() {
   document.getElementById('bookOfTheDay').textContent = `Today's Book of the Day is: ${bookOfTheDay}`;
 }
 
+function submitGenre() {
+  const genre = document.getElementById('genre').value;
+  if (genre) {
+    document.getElementById('recommendation').textContent = `You entered: ${genre}. We recommend exploring the best books in the ${genre} genre!`;
+  } else {
+    document.getElementById('recommendation').textContent = 'Please enter a genre!';
+  }
+}
 
+function dangerClick() {
+  alert("Oops! You clicked the forbidden button!");
+}
 
 const todaysBookBtn = document.getElementById('todaysBook');
 todaysBookBtn.addEventListener('click', showBookOfTheDay);
 
+document.getElementById('submitGenre').addEventListener('click', submitGenre);
+
+const dangerBtn = document.getElementsByClassName('btn')[0];
+dangerBtn.onclick = dangerClick;
+
+document.querySelector('#mainTitle').addEventListener('mouseover', function() {
+  this.style.color = 'gold';
+});
+document.querySelector('#mainTitle').addEventListener('mouseout', function() {
+  this.style.color = '';
+});
+
+const socialLinks = document.getElementsByClassName('socialLink');
+for (let link of socialLinks) {
+  link.onclick = function(event) {
+    event.preventDefault();
+    alert(`You clicked on the ${this.textContent} link!`);
+  };
+}
+
+const navbarLinks = document.getElementsByTagName('a');
+for (let link of navbarLinks) {
+  link.onclick = function(event) {
+    event.preventDefault();
+    alert(`Navigating to: ${this.textContent}`);
+  };
+}
