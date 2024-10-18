@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "version": "1.0",
+  "name": "S&P 500 Tracker",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "image.png"
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}
