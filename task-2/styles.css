@@ -1,21 +1,45 @@
 body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  background-color: #f4f4f4;
-  min-width: 300px;
+  margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 400px;
 }
 
-h1 {
-  color: #416093;
+input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #a200ff;
+  margin-bottom: 4px;
 }
 
-#sp500-price {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 20px 0;
+button {
+  background: #a200ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
 }
 
-#update-time {
-  font-size: 12px;
-  color: #888;
+button:hover {
+  background: #7a00cc;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  background: #f1f1f1;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+li button {
+  background: #ff0000;
+  padding: 5px;
 }
